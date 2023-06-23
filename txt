@@ -1,0 +1,16 @@
+$product_name = $_POST['product_name'];
+$price = $_POST['product_price'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+
+
+'purpose' => $product_name,
+    'amount' => $price,
+    'buyer_name' => $name,
+    'email' => $email,
+    'phone' => $phone,
+    'redirect_url' => 'http://localhost/shopping/thankyou.php',
+    'send_email' => true,
+    'send_sms' => true,
+    'allow_repeated_payments' => false
